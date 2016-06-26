@@ -1,7 +1,4 @@
-@charset 'UTF-8';
-/*---------------------------------------------------------
-Author: kobayashi
----------------------------------------------------------*/
+@charset "UTF-8";
 /*全体的なもの*/
 * {
 	font-family: 'Cabin',"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -71,23 +68,21 @@ nav {
 	width: 100%;
 	overflow: hidden;
 	background-color: #222222;
-}
-
-nav .menu {
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
-	display: table;
-	width: 960px;
-	margin: 0 auto;
-}
-
-nav .menu li {
-	display: table-cell;
-	text-align: center;
-	padding-top: 2.5px;
-	padding-bottom: 2.5px;
-	border-right: 1px dotted #DBDADB;
+	.menu {
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		display: table;
+		width: 960px;
+		margin: 0 auto;
+		li {
+			display: table-cell;
+			text-align: center;
+			padding-top: 2.5px;
+			padding-bottom: 2.5px;
+			border-right: 1px dotted #DBDADB;
+		}
+	}
 }
 nav .menu li:last-child {
 	border: none;
