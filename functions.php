@@ -19,7 +19,7 @@ add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 4  );
 
 // 抜粋の長さを変更する
 function custom_excerpt_length( $length ) {
-	return 75;
+	return 70;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
