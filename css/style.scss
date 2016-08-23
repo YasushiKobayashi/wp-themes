@@ -145,17 +145,16 @@ nav .menu li a {
 			text-justify: inter-ideograph;
 			h3 {
 				height: 90px;
-				margin: 0 0 -35px 0;
+				margin-bottom: 10px;
 			}
 			span {
 				font-size: 75%;
 			}
 			p {
-				margin-top: 8px;
-				margin-bottom: 8px;
+				margin: 0 8px;
 			}
 			span a {
-				color: black;
+				color: #000;
 				position: static;
 				font-size: 1em;
 				text-align: left;
@@ -434,6 +433,12 @@ input {
 
 .bottomRight h3, .bottomLeft h3, .bottomRight .wp_rp_wrap .related_post_title {
 	margin: 0 0 20px 0 !important;
+}
+#copy {
+	text-align: center;
+}
+#PT921badge {
+	display: none !important;
 }
 
 /*人気記事*/

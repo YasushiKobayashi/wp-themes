@@ -89,46 +89,14 @@
     <?php wp_related_posts()//init.phpの332行目にspanを追加?>
 </div>
 </div>
-<div id="footad">
-    <?php if (wp_is_mobile() && has_tag(array(96,102,103))): //禁止タグではスマホは忍者一つ?>
-        <script src="http://adm.shinobi.jp/s/036b18e03686c910acd4c4eec36d89bb"></script>
-    <?php elseif (wp_is_mobile()): //通常モバイル?>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- smartfoot -->
-        <ins class="adsbygoogle"
-        style="display:inline-block;width:300px;height:250px"
-        data-ad-client="ca-pub-6112624668752806"
-        data-ad-slot="4654949376"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    <?php else:?>
-        <div class="fotterad">
-            <script src="http://adm.shinobi.jp/s/036b18e03686c910acd4c4eec36d89bb"></script>
-        </div>
-        <div class="fotterad">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- smartIN -->
-            <ins class="adsbygoogle"
-            style="display:inline-block;width:300px;height:250px"
-            data-ad-client="ca-pub-6112624668752806"
-            data-ad-slot="2851118970"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-        <div class="fotterad">
-            <script src="http://adm.shinobi.jp/s/036b18e03686c910acd4c4eec36d89bb"></script>
-        </div>
-    <?php endif;?>
-</div>
-<footer>
     <div id="footerinner">
-        <p id="copy">Copyright&copy;
+        <p id="copy">
+            Copyright&copy;
             <?php bloginfo('name').','.the_date('Y');?>
-            All Rights Reserved.</p>
-        </div>
-    </footer>
-    <?php wp_footer(); ?>
+            All Rights Reserved.
+        </p>
+    </div>
+</footer>
+<?php wp_footer(); ?>
 </body>
 </html>
