@@ -443,7 +443,7 @@ input {
 
 /*人気記事*/
 
-.bottomLeft .wpp-list {
+.bottomLeft .wpp-list, .bottomRight .related_post {
 	padding: 0;
 	li {
 		width: 140px;
@@ -487,6 +487,16 @@ input {
 		list-style: none;
 		font-size: 12px;
 		clear: inherit;
+		span {
+		    width: 140px;
+		    height: 140px;
+			display: table-cell;
+		    vertical-align: middle;
+			img {
+				width: auto;
+				max-height: 100%;
+			}
+		}
 		.wpp-thumbnail {
 			border-radius: 3px;
 			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
