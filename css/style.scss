@@ -621,6 +621,7 @@ footer {
 			margin: 0 2.5% 30px 2.5%;
 			dd {
 				width: 90%;
+				padding-bottom: 10px;
 			}
 		}
 	}
@@ -671,9 +672,6 @@ footer {
 		&:target {
 			top: 0px;
 		}
-	}
-	#top dl dd h3 {
-		margin-bottom: -10px;
 	}
 	nav .menu {
 		width: 100%;
@@ -775,7 +773,6 @@ footer {
 			height: auto;
 			dd h3 {
 				height: auto;
-				margin-bottom: -25px;
 			}
 		}
 	}
