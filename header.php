@@ -88,11 +88,11 @@ endif;
 <!-- CSSなど -->
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.css">
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" type="text/css" media="screen" />
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" />
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
 <!--[if lt IE 9]>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
@@ -116,16 +116,6 @@ $(function(){//Google Analyticsアウトバウンドリンク設定
             ga('send', 'event', 'a8' ,'click', next_url, 1);
         } else {
             ga('send', 'event', '外部リンク' ,'click', next_url, 1);
-        }
-    });
-    //アニメーション
-    $("#top[data-liffect] dl").each(function (i) {
-        $(this).attr("style", "-webkit-animation-delay:" + i * 500 + "ms;"
-        + "-moz-animation-delay:" + i * 500 + "ms;"
-        + "-o-animation-delay:" + i * 500 + "ms;"
-        + "animation-delay:" + i * 500 + "ms;");
-        if (i == $("#top[data-liffect] dl").size() -1) {
-            $("#top[data-liffect]").addClass("play")
         }
     });
 });
