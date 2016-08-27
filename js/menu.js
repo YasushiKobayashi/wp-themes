@@ -1,3 +1,1 @@
-$('.menu').slicknav({
-	prependTo:'#demo1'
-});
+$(".menu").slicknav({prependTo:"#demo1"});
