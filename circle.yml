@@ -1,3 +1,7 @@
 test:
   override:
-    - echo Hello World
+    - php oil test --exclude-group=integration,Format
+machine:
+  timezone: Asia/Tokyo
+  php:
+    version: 7.0.9
