@@ -204,7 +204,7 @@ array(
 
 
 //更新日の追加
-function get_mtime($format) {
+function get_mtime($format) 
 	$mtime = get_the_modified_time('Ymd');
 	$ptime = get_the_time('Ymd');
 	if ($ptime > $mtime) {
@@ -215,5 +215,3 @@ function get_mtime($format) {
 		return get_the_modified_time($format);
 	}
 }
-
-class Int {}
