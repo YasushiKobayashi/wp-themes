@@ -1,6 +1,3 @@
-test:
-  override:
-    - echo Hello World
 machine:
   timezone: Asia/Tokyo
   php:
@@ -27,8 +24,8 @@ dependencies:
 
     # Clonse WP Pusher plugin from GitHub
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes
-    - wp theme enable wp-themes
+    - ./wp-cli.phar themes activate wp-themes --path=wordpress
 
 test:
   override:
-    # Finally, run our Behat features
+    - echo Hello World
