@@ -28,14 +28,6 @@ dependencies:
     # Clonse WP Pusher plugin from GitHub
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes
 
-
-  post:
-    # Use `a2ensite` to create a symlink for the config
-    - a2ensite apache-ci.conf
-
-    # Restart the Apache server
-    - sudo service apache2 restart
-
 test:
   override:
     # Finally, run our Behat features
