@@ -1,6 +1,6 @@
 test:
   override:
-    echo Hello World 
+    - echo Hello World 
 machine:
   timezone: Asia/Tokyo
   php:
