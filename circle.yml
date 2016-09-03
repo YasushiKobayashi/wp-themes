@@ -4,4 +4,4 @@ test:
 machine:
   timezone: Asia/Tokyo
   php:
-    version: 7
+    version: 7.0.4
