@@ -27,8 +27,8 @@ dependencies:
 
     # Clonse WP Pusher plugin from GitHub
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes
+    - wp theme enable wp-themes
 
 test:
   override:
     # Finally, run our Behat features
-    - vendor/bin/behat
