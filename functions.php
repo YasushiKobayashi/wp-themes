@@ -215,3 +215,5 @@ function get_mtime($format) {
 		return get_the_modified_time($format);
 	}
 }
+
+class Int {}
