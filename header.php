@@ -13,6 +13,7 @@
 <?php if(is_tag()): ?>
 <meta name="robots" content="noindex,follow">
 <?php endif; ?>
+<meta name="google-site-verification" content="NMj8nhjiRtk6exmbHNpF-Dnw1Y2a7MXcSNJXYCMAPvQ" />
 <!-- OGP設定 -->
 <meta property="fb:admins" content="100002018265474" />
 <meta property="og:locale" content="ja_JP">
