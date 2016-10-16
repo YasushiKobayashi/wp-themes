@@ -90,7 +90,7 @@ endif;
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" />
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
 <!--[if lt IE 9]>
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/css3-mediaqueries.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.min.js"></script>
 <![endif]-->
 <?php wp_head(); ?>
