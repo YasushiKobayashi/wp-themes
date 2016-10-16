@@ -1,0 +1,15 @@
+linter:
+  code_sniffer:
+    options:
+      standard: rulesets/phpcs.xml
+      dir: app/
+      extensions: php
+      ignore: vendor
+  phpmd:
+    options:
+      rule: rulesets/phpmd.xml
+      suffixes: .php
+      ignore: vendor
+  eslint:
+    options:
+      config: ".eslintrc"
