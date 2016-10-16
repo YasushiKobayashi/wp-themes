@@ -19,7 +19,6 @@ dependencies:
 
     # Generate `wp-config.php` file
     - ./wp-cli.phar core config --allow-root --dbname=wordpress --dbuser=ubuntu --dbhost=localhost --path=wordpress
-    - ./wp-cli.phar wp core install --path=wordpress
 
 
     - rm -rf wordpress/wp-content/themes/*

@@ -3,9 +3,6 @@
 <!--[if IE 7]> <html class="i7" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8]> <html class="ie" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
@@ -94,7 +91,7 @@ endif;
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
 <!--[if lt IE 9]>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.min.js"></script>
 <![endif]-->
 <?php wp_head(); ?>
 <?php if(is_mobile()):?>
