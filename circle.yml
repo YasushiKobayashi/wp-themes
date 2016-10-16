@@ -15,7 +15,10 @@ dependencies:
     - chmod +x wp-cli.phar
 
     # Download WordPress into `wordpress` directory
+    - ./wp-cli.phar core install --allow-root --admin_name=admin --admin_password=admin --admin_email=admin@example.com --url=http://wppusher-plugin.dev:8080 --title=WordPress --path=wordpress
+
     - ./wp-cli.phar core download --allow-root --path=wordpress
+    - ./wp core download --locale=ja --path=wordpress/
 
     # Generate `wp-config.php` file
     - ./wp-cli.phar core config --allow-root --dbname=wordpress --dbuser=ubuntu --dbhost=localhost --path=wordpress
