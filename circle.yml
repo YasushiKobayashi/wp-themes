@@ -29,9 +29,13 @@ dependencies:
     # Clonse WP Pusher plugin from GitHub
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes/wp-themes
     - ./wp-cli.phar theme activate wp-themes --path=wordpress
+    - sudo /etc/init.d/apache2 restart
 
 test:
   override:
-    - echo Hello World
+    - pwd ~
+    - ifconfig
+    - echo HelloWorld
     - curl http://127.0.0.1/
     - curl http://127.0.0.1/page/2
+    - exit 0
