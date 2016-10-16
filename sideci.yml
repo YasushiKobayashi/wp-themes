@@ -1,13 +1,11 @@
 linter:
   code_sniffer:
     options:
-      standard: rulesets/phpcs.xml
-      extensions: php
+      standard: PSR2
       ignore: vendor
   phpmd:
     options:
-      rule: rulesets/phpmd.xml
-      suffixes: .php
+      rule: codesize,naming,custom_rule.xml
       ignore: vendor
   eslint:
     options:
