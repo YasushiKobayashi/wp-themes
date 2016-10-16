@@ -33,3 +33,5 @@ dependencies:
 test:
   override:
     - echo Hello World
+    - curl http://127.0.0.1/
+    - curl http://127.0.0.1/page/2

@@ -2,7 +2,6 @@ linter:
   code_sniffer:
     options:
       standard: rulesets/phpcs.xml
-      dir: app/
       extensions: php
       ignore: vendor
   phpmd:
