@@ -28,7 +28,7 @@ dependencies:
 
     # Clonse WP Pusher plugin from GitHub
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes
-    - ./wp-cli.phar themes activate wp-themes --path=wordpress
+    - ./wp-cli.phar theme activate wp-themes --path=wordpress
 
 test:
   override:
