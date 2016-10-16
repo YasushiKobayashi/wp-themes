@@ -35,6 +35,6 @@ test:
     - pwd ~
     - ifconfig
     - echo HelloWorld
-    - curl http://127.0.0.1/wordpress/
-    - curl http://127.0.0.1/wordpress/page/2
+    - curl http://wppusher-plugin.dev:8080/
+    - curl http://wppusher-plugin.dev:8080/page/2
     - exit 0
