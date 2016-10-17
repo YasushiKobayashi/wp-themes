@@ -28,7 +28,7 @@ test:
   override:
     - sh htttp_test.sh
     - gulp lint
-    - eslint *.js
+    - eslint ./js
     - sh phpcs_test.sh
     - sh phpmd_test.sh
     - exit 0
