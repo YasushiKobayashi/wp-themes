@@ -1,2 +1,2 @@
 #!/bin/sh
-php-cs-fixer fix *.php --level=psr2
+php-cs-fixer fix ./ --level=psr2
