@@ -22,9 +22,12 @@ dependencies:
     # Clonse themes from GitHub
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes/wp-themes
     - ./wp-cli.phar theme activate wp-themes --path=wordpress
-    - cd wordpress/wp-content/themes/wp-themes && composer update
+    - composer install
+    - npm update
 test:
   override:
     - sh .composer/htttp_test.sh
-    - cd wordpress/wp-content/themes/wp-themes/ && sh phpcs_test.sh && sh phpmd_test.sh
+    - gulp lint
+    - sh phpcs_test.sh
+    - sh phpmd_test.sh
     - exit 0
