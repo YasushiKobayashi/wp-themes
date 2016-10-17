@@ -2,7 +2,7 @@
     <h3><i class="fa fa-check-square-o"></i>&nbsp;更新をチェックする！<a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fyasushikobayashi.info%2F'  target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-volume-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a></h3>
     <?php if (wp_is_mobile()):?>
         <!-- Twitter -->
-        <p><a href="https://twitter.com/jkhayate" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @jkhayate</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+        <p><a href="https://twitter.com/jkhayate" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @jkhayate</a><script>!function (d,s,id) {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
         <!-- Facebook -->
         <p><div class="fb-page" data-href="https://www.facebook.com/yasushikobayashi.info" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/yasushikobayashi.info"><a href="https://www.facebook.com/yasushikobayashi.info">Kobayashi Blog</a></blockquote></div></div></p>
         <!-- Google検索 -->
@@ -37,7 +37,7 @@
 <?php else:?>
     <div class="bottomLeft">
         <a class="twitter-timeline" href="https://twitter.com/jkhayate" data-widget-id="429228791827660800" height="500" >Tweets by @jkhayate</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <script>!function (d,s,id) {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     <div class="bottomRight">
         <div class="fb-page" data-href="https://www.facebook.com/yasushikobayashi.info" data-width="465px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/yasushikobayashi.info"><a href="https://www.facebook.com/yasushikobayashi.info">Kobayashi Blog</a></blockquote></div></div>

@@ -7,11 +7,11 @@ dependencies:
   pre:
     # No password is required for the MySQL user `ubuntu`
     - mysql -u ubuntu -e "create database wordpress"
-    
+
     # Use cURL to fetch WP-CLI
     - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
     - chmod +x wp-cli.phar
-    
+
     # Download WordPress into `wordpress` directory
     - ./wp-cli.phar core download --allow-root --path=wordpress
     - ./wp-cli.phar core config --allow-root --dbname=wordpress --dbuser=ubuntu --dbhost=localhost --path=wordpress
@@ -21,17 +21,13 @@ dependencies:
 
     # Clonse themes from GitHub
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes/wp-themes
-    - pwd
-    - pwd ~
     - ./wp-cli.phar theme activate wp-themes --path=wordpress
     - cd wordpress/wp-content/themes/wp-themes/.composer && composer install
-    - pwd ~
 test:
   override:
-    - pwd ~
-    - ifconfig
-    - cd wordpress/wp-content/themes/wp-themes/.composer && sh phpcs_test.sh && sh phpmd_test.sh
+    #- cd wordpress/wp-content/themes/wp-themes/.composer && sh phpcs_test.sh && sh phpmd_test.sh
     # - curl http://127.0.0.1/wordpress
-    - curl httpbin.org/ip 
-    - curl inet-ip.info
+    - url = `curl inet-ip.info`
+    - echo url
+    - curl -I -s http://
     - exit 0

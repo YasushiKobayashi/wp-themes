@@ -1,5 +1,6 @@
 <?php
-function register_jq_script() {
+function register_jq_script()
+{
     if (!is_admin()) {
         $script_dir = get_template_directory_uri();
         wp_deregister_script( 'jquery' );
@@ -9,7 +10,8 @@ function register_jq_script() {
 add_action('wp_enqueue_scripts','register_jq_script');
 
 //WordPress の投稿スラッグを自動的に生成する
-function auto_post_slug( $slug, $post_ID, $post_status, $post_type ) {
+function auto_post_slug($slug, $post_ID, $post_status, $post_type)
+{
     if ( preg_match( '/(%[0-9a-f]{2})+/', $slug ) ) {
         $slug = utf8_uri_encode( $post_type ) . '-' . $post_ID;
     }
@@ -18,19 +20,22 @@ function auto_post_slug( $slug, $post_ID, $post_status, $post_type ) {
 add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 4  );
 
 // 抜粋の長さを変更する
-function custom_excerpt_length( $length ) {
+function custom_excerpt_length($length)
+{
     return 70;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // 文末文字を変更する
-function custom_excerpt_more($more) {
+function custom_excerpt_more($more)
+{
     return ' <br/>... read more ';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
 
 //スマホ表示分岐
-function is_mobile(){
+function is_mobile()
+{
     $useragents = array(
         'iPhone', // iPhone
         'iPod', // iPod touch
@@ -73,18 +78,15 @@ function pagination($pages = '', $range = 4)
     global $paged;
     if(empty($paged)) $paged = 1;
 
-    if($pages == '')
-    {
+    if($pages == '') {
         global $wp_query;
         $pages = $wp_query->max_num_pages;
-        if(!$pages)
-        {
+        if(!$pages) {
             $pages = 1;
         }
     }
 
-    if(1 != $pages)
-    {
+    if(1 != $pages) {
         echo "<div class=\"pagination\"><span>Page ".$paged." of ".$pages."</span>";
         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link
 
@@ -93,8 +95,7 @@ function pagination($pages = '', $range = 4)
 
         Previous</a>";
 
-        for ($i=1; $i <= $pages; $i++)
-        {
+        for ($i=1; $i <= $pages; $i++) {
             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems
 
             ))
@@ -127,7 +128,8 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action( 'wp_head', 'wp_generator' );
 
 // パンくずリスト
-function breadcrumb(){
+function breadcrumb()
+{
     global $post;
     $str ='';
     if(!is_home()&&!is_admin()){
@@ -166,14 +168,16 @@ function breadcrumb(){
 }
 
 //moreリンク
-function custom_content_more_link( $output ) {
+function custom_content_more_link($output)
+{
     $output = preg_replace('/#more-[\d]+/i', '', $output );
     return $output;
 }
 add_filter( 'the_content_more_link', 'custom_content_more_link' );
 
 //セルフピンバック禁止
-function no_self_ping( &$links ) {
+function no_self_ping(&$links)
+{
     $home = home_url();
     foreach ( $links as $l => $link )
     if ( 0 === strpos( $link, $home ) )
@@ -182,7 +186,8 @@ function no_self_ping( &$links ) {
 add_action( 'pre_ping', 'no_self_ping' );
 
 //iframeのレスポンシブ対応
-function wrap_iframe_in_div($the_content) {
+function wrap_iframe_in_div($the_content)
+{
     if ( is_singular() ) {
         $the_content = preg_replace('/< *?iframe/i', '<div class="youtube-container"><iframe', $the_content);
         $the_content = preg_replace('/<\/ *?iframe *?>/i', '</iframe></div>', $the_content);
@@ -204,7 +209,8 @@ array(
 
 
 //更新日の追加
-function get_mtime($format) {
+function get_mtime($format)
+{
     $mtime = get_the_modified_time('Ymd');
     $ptime = get_the_time('Ymd');
     if ($ptime > $mtime) {
