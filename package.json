@@ -18,6 +18,7 @@
   "homepage": "https://github.com/YasushiKobayashi/wp-themes#readme",
   "devDependencies": {
     "coffee-script": "^1.11.0",
+    "eslint": "^3.8.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-plumber": "^1.1.0",
