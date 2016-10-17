@@ -9,9 +9,10 @@ gulp.task 'lint', ->
     .pipe(scsslint({
       'reporterOutputFormat': 'Checkstyle',
       'bundleExec': true,
-      'config': 'scss-lint.yml'
+      'reporterOutput': 'scssReport.json',
+      'config': './scss-lint.yml'
     }))
-    .pipe( scsslint.failReporter())
+    .pipe(scsslint.failReporter())
 
 
 gulp.task 'sass', ->

@@ -3,9 +3,9 @@ machine:
   php:
     version: 7.0.4
   node:
-    version:  4.*
+    version:  6.*
   post:
-    - npm install -g npm@2
+    - npm install -g npm@3
 
 dependencies:
   pre:
