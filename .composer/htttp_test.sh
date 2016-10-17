@@ -1,4 +1,3 @@
 #!/bin/bash
 url=`curl inet-ip.info`
-echo $url
-curl -I -s "http://$url"/wordpress
+curl -LI "$url"/wordpress -o /dev/null -w '%{http_code}\n' -s
