@@ -27,7 +27,7 @@ dependencies:
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes/wp-themes
     - ./wp-cli.phar theme activate wp-themes --path=wordpress
     - composer install
-    - npm install eslint -g
+    - npm install -g eslint gulp-scss-lint
     - npm install
 test:
   override:
