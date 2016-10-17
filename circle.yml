@@ -10,31 +10,28 @@ dependencies:
     
     # Use cURL to fetch WP-CLI
     - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-    
-    # Make sure WP-CLI is executable
     - chmod +x wp-cli.phar
     
     # Download WordPress into `wordpress` directory
     - ./wp-cli.phar core download --allow-root --path=wordpress
-    
-    # Generate `wp-config.php` file
     - ./wp-cli.phar core config --allow-root --dbname=wordpress --dbuser=ubuntu --dbhost=localhost --path=wordpress
-    
-    # Install WordPress
     - ./wp-cli.phar core install --allow-root --admin_name=admin --admin_password=admin --admin_email=admin@example.com --url=http://wppusher-plugin.dev:8080 --title=WordPress --path=wordpress
-
 
     - rm -rf wordpress/wp-content/themes/*
 
-    # Clonse WP Pusher plugin from GitHub
+    # Clonse themes from GitHub
     - git clone git@github.com:YasushiKobayashi/wp-themes.git wordpress/wp-content/themes/wp-themes
+    - pwd
+    - pwd ~
     - ./wp-cli.phar theme activate wp-themes --path=wordpress
-
+    - cd wordpress/wp-content/themes/wp-themes/.coporser
+    - composer install
 test:
   override:
     - pwd ~
     - ifconfig
-    - echo HelloWorld
-    - curl http://wppusher-plugin.dev:8080/
-    - curl http://wppusher-plugin.dev:8080/page/2
+    - cd wordpress/wp-content/themes/wp-themes/.coporser
+    - sh phpcs_test.sh
+    - sh phpmd_test.sh
+    - curl http://127.0.0.1/
     - exit 0
