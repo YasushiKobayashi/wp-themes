@@ -2,6 +2,10 @@ machine:
   timezone: Asia/Tokyo
   php:
     version: 7.0.4
+  node:
+    version:  4.*
+  post:
+    - npm install -g npm@2
 
 dependencies:
   pre:
