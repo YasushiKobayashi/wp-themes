@@ -26,7 +26,7 @@ dependencies:
     - npm update
 test:
   override:
-    - sh .composer/htttp_test.sh
+    - sh htttp_test.sh
     - gulp lint
     - eslint *.js
     - sh phpcs_test.sh

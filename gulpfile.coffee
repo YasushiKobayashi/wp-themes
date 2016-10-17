@@ -17,5 +17,5 @@ gulp.task 'lint', ->
 gulp.task 'sass', ->
   gulp.src('css/*.scss')
     .pipe sass()
-      .pipe minifycss()
+      # .pipe minifycss()
         .pipe gulp.dest('./css')
