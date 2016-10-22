@@ -7,8 +7,8 @@ hooks:
   AfterInstall:
     - location: scripts/wordpress_deploy.sh
       timeout: 300
-      runas: root
+      runas: git
     - location: scripts/theme_deploy.sh
       timeout: 300
-      runas: root
+      runas: git
       
