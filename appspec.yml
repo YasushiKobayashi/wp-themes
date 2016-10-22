@@ -5,10 +5,10 @@ files:
     destination: /var/www/deploy/
 hooks:
   AfterInstall:
-    - location: scripts/wpdeploy.sh
+    - location: scripts/wordpress_deploy.sh
       timeout: 300
       runas: root
-    - location: scripts/deploy.sh
+    - location: scripts/theme_deploy.sh
       timeout: 300
       runas: root
       
