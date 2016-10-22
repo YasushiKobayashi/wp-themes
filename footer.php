@@ -9,11 +9,11 @@
         <p><div class="fb-page" data-href="https://www.facebook.com/yasushikobayashi.info" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/yasushikobayashi.info"><a href="https://www.facebook.com/yasushikobayashi.info">Kobayashi Blog</a></blockquote></div></div></p>
         <!-- Google検索 -->
         <p><style type="text/css">
-        @import url(http://www.google.com/cse/api/branding.css);
+        @import url(//www.google.com/cse/api/branding.css);
         </style>
         <div class="cse-branding-bottom" style="background-color:#FFFFFF;color:#000000">
             <div class="cse-branding-form">
-                <form action="http://www.google.co.jp/cse" id="cse-search-box" target="_blank">
+                <form action="//www.google.co.jp/cse" id="cse-search-box" target="_blank">
                     <div>
                         <input type="hidden" name="cx" value="partner-pub-6112624668752806:3985640979" />
                         <input type="hidden" name="ie" value="UTF-8" />
@@ -35,7 +35,7 @@
     </script>
     <div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/110607281455714744822" data-rel="publisher"></div></p>
     <!-- LINE -->
-    <p><a href="http://line.me/ti/p/%40jgm1559a"><img height="36" border="0" alt="'stats.label.addfriend' (MISSING TRANSLATION)" src="<?php bloginfo('template_url'); ?>/images/line.png"></a></p>
+    <p><a href="//line.me/ti/p/%40jgm1559a"><img height="36" border="0" alt="'stats.label.addfriend' (MISSING TRANSLATION)" src="<?php bloginfo('template_url'); ?>/images/line.png"></a></p>
 <?php else:?>
     <div class="bottomLeft">
         <a class="twitter-timeline" href="https://twitter.com/jkhayate" data-widget-id="429228791827660800" height="500" >Tweets by @jkhayate</a>
@@ -44,11 +44,11 @@
     <div class="bottomRight">
         <div class="fb-page" data-href="https://www.facebook.com/yasushikobayashi.info" data-width="465px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/yasushikobayashi.info"><a href="https://www.facebook.com/yasushikobayashi.info">Kobayashi Blog</a></blockquote></div></div>
         <p><style type="text/css">
-        @import url(http://www.google.com/cse/api/branding.css);
+        @import url(//www.google.com/cse/api/branding.css);
         </style>
         <div class="cse-branding-bottom" style="background-color:#FFFFFF;color:#000000">
             <div class="cse-branding-form">
-                <form action="http://www.google.co.jp/cse" id="cse-search-box" target="_blank">
+                <form action="//www.google.co.jp/cse" id="cse-search-box" target="_blank">
                     <div>
                         <input type="hidden" name="cx" value="partner-pub-6112624668752806:3985640979" />
                         <input type="hidden" name="ie" value="UTF-8" />
@@ -58,7 +58,7 @@
                 </form>
             </div>
             <div class="cse-branding-logo">
-                <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+                <img src="//www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
             </div>
             <div class="cse-branding-text">
                 カスタム検索
