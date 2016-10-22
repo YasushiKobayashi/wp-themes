@@ -1,5 +1,7 @@
 <div id="bottomWrapper">
-    <h3><i class="fa fa-check-square-o"></i>&nbsp;更新をチェックする！<a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fyasushikobayashi.info%2F'  target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-volume-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a></h3>
+    <h3><i class="fa fa-check-square-o"></i>&nbsp;更新をチェックする！
+    <a href='//cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fyasushikobayashi.info%2F'  target='blank'><img id='feedlyFollow' src='//s3.feedly.com/img/follows/feedly-follow-rectangle-volume-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a>
+    </h3>
     <?php if (wp_is_mobile()):?>
         <!-- Twitter -->
         <p><a href="https://twitter.com/jkhayate" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @jkhayate</a><script>!function (d,s,id) {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
@@ -21,7 +23,7 @@
                 </form>
             </div>
             <div class="cse-branding-logo">
-                <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+                <img src="//www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
             </div>
             <div class="cse-branding-text">
                 カスタム検索
