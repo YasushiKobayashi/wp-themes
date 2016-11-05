@@ -3,13 +3,13 @@
     <p><i class="fa fa-anchor"></i>&nbsp;-&nbsp;<?php breadcrumb(); //パンくず ?></p>
     <!--/kuzu-->
     <h2>「
-        <?php if (is_category()):?>
-            <?php single_cat_title(); ?>
-        <?php elseif (is_tag()):?>
-            <?php single_tag_title(); ?>
-        <?php elseif (is_tax()):?>
-            <?php single_term_title(); ?>
-        <?php elseif (is_day()):?>
+        <?php if (is_category()):
+            single_cat_title();
+        elseif (is_tag()):
+            single_tag_title();
+        elseif (is_tax()):
+            single_term_title();
+        elseif (is_day()):?>
             日別アーカイブ：<?php echo get_the_time('Y年m月d日'); ?>
         <?php elseif (is_month()):?>
             月別アーカイブ：<?php echo get_the_time('Y年m月'); ?>
