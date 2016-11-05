@@ -7,11 +7,10 @@
                     <!--ぱんくず -->
                     <div id="breadcrumb">
                         <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb"> <a href="<?php echo home_url(); ?>" itemprop="url"> <span itemprop="title">ホーム</span> </a> &gt; </div>
-                        <?php $postcat = get_the_category(); ?>
-                        <?php $catid = $postcat[0]->cat_ID; ?>
-                        <?php $allcats = array($catid); ?>
-                        <?php
-                        while(!$catid==0) {
+                        <?php $postcat = get_the_category();
+                        $catid = $postcat[0]->cat_ID;
+                        $allcats = array($catid);
+                        while (!$catid==0) {
                             $mycat = get_category($catid);
                             $catid = $mycat->parent;
                             array_push($allcats, $catid);
