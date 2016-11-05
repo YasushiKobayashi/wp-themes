@@ -18,8 +18,7 @@
                         }
                         array_pop($allcats);
                         $allcats = array_reverse($allcats);
-                        ?>
-                        <?php foreach($allcats as $catid): ?>
+                        foreach($allcats as $catid): ?>
                             <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb"> <a href="<?php echo get_category_link($catid); ?>" itemprop="url"> <span itemprop="title"><?php echo get_cat_name($catid); ?></span> </a> &gt; </div>
                         <?php endforeach; ?>
                     </div>
